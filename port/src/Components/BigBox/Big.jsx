@@ -130,7 +130,7 @@ function Big({ classes }) {
                   width='32'
                   height='32'
                   viewBox='0 0 48 32'
-                  fill='#fff'
+                  fill='#fffff'
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   {' '}
@@ -146,7 +146,7 @@ function Big({ classes }) {
                   width='20'
                   height='20'
                   viewBox='0 0 25 25'
-                  fill='#4a4a4a'
+                  fill='#ECF0F1'
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   {' '}

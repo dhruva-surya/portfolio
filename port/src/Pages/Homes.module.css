@@ -2,12 +2,16 @@
   width: 60%;
   border-radius: 50px;
   justify-content: space-between;
-  background: #e9e5dd;
-  box-shadow: inset 5px 5px 3px #5d5c58,
-              inset -5px -5px 3px #ffffff;
+  background: #fffdfa;
+  box-shadow: inset 5px 5px 3px black,
+              inset -5px -5px 3px black;
   padding: 40px;
   margin: 30px;
  display: flex;
+ 
+
+
+
   
 }
 .tools > img {
@@ -19,13 +23,19 @@
 
 #butn {
   border-radius: 20px;
-  background: linear-gradient(145deg, #f9f5ec, #d2cec7);
-box-shadow:  7px 7px 15px #979590,
-             -7px -7px 15px #ffffff;
+  background: linear-gradient(145deg, #f9f5ec, #ffffff);
+
   color: black;
-  border: 1px solid rgb(74, 74, 74);
+  border: 3px solid black;
 }
 
 .github {
   background: #ffa500;
 }
+
+@media (max-width: 1000px) {
+  .tools{
+   flex-direction:column
+ }
+}
+

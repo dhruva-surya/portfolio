@@ -22,7 +22,7 @@ const styles = {
       marginBottom: '10px',
     },
     textAlign: 'center',
-    backgroundColor: '  #e9e5dd;',
+    backgroundColor: '  #ffffff;',
   },
 
   p__img__container: {
@@ -48,8 +48,8 @@ const styles = {
   project__container: {
     padding: '6vw',
     textAlign: 'center',
-
-    backgroundColor: '#e9e5dd;',
+    
+    backgroundColor: '#ffff;',
 
   
 
@@ -64,8 +64,9 @@ const styles = {
   },
   project__card__content: {
     borderBottomLeftRadius: '10px',
+   
     borderBottomRightRadius: '10px',
-    backgroundColor: '#f1f1f1',
+    backgroundColor: '#ECF0F1',
     padding: '1vw',
   },
   img__container: {
@@ -104,6 +105,7 @@ const styles = {
   project__card__container: {
     display: 'grid',
     color: 'black',
+    
     textAlign: 'left',
     gridTemplateColumns: '1fr 1fr 1fr',
     gridGap: '2vw',
@@ -111,6 +113,7 @@ const styles = {
     borderTopRightRadius: '10px',
     '& img': {
       borderTopLeftRadius: '10px',
+      
       borderTopRightRadius: '10px',
       width: '100%',
     },
@@ -126,7 +129,7 @@ const styles = {
     display: 'flex',
     width: '100%',
     flexWrap: 'wrap',
-
+    border: '3px solid black',
     justifyContent: 'center',
     alignItems: 'center',
     '& img': {
@@ -141,8 +144,8 @@ const styles = {
     borderRadius: '5px',
     cursor: 'pointer',
     outline: 'none',
-    border: '0.01em solid #cfcccc',
-    boxShadow: ' 0px 1px 1px #b6b3b3 ',
+    border: '0.01em solid black',
+    boxShadow: ' 0px 1px 1px black ',
     font: '30%',
     color: 'inherit',
 
@@ -171,20 +174,30 @@ const styles = {
   techContainer: {
     textAlign: 'center',
     padding: '0 6vw',
-
+  
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#e9e5dd;',
+    backgroundColor: '#ffff',
   },
   experince: {
     padding: '40px 6vw',
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    backgroundColor: '#e9e5dd;',
+    backgroundColor: '#ECF0F1;',
    
+  },
+  project__card:{
+
+    border: '7px solid black',
+    borderRadius:'5px',
+    boxShadow:  '7px 7px 15px black',
+            
+
+  color: 'black',
+
   },
 
   contactMe: {
@@ -231,11 +244,13 @@ function Home({ classes }) {
           <h2>About Me</h2>
           <div className={classes.p__img__container}>
             <p>
-              Hi I'm Dhruvasurya, Aspiring Full-Stack Developer, skilled in both
-              front-end and back-end web development. Well versed in coding with
-              React.js, Redux, HTML, CSS & Javascript for the client-side, and
-              maintaining databases and infrastructure using Node.js, Express.js
-              on the server-side.
+            Hi I am DHRUVASURYA Well trained in JavaScript, MERN stack and Data
+            structure and Algorithm. Collaborative team
+            player dedicated to execute goal-oriented
+            projects. Seeking an opportunity to use my skills
+            and work on creating exciting and unique
+            products, as a Full Stack Web Developer in a
+            reputed company.
             </p>
             <img
               src={process.env.PUBLIC_URL + '/images/avatar.jpg'}
@@ -339,7 +354,7 @@ function Home({ classes }) {
             <div className={classes.img__container}>
               <img
                 src={process.env.PUBLIC_URL + '/images/shine.gif'}
-                alt='boat'
+                alt=''
               />
             </div>
 
@@ -400,6 +415,11 @@ function Home({ classes }) {
               </div>
             </div>
           </div>
+
+
+
+
+
 
          
           {/* Last */}
