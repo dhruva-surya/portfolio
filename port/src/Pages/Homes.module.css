@@ -20,12 +20,12 @@
 
 .tools  > div{
   justify-content: center;
-  border: 2px solid black;
+  border: 2px solid rgb(58, 58, 58);
   padding: 2%;
   width: 22%;
   margin-right: 1.5%;
   margin-bottom: 1vh;
-  border-radius: 3%;
+  border-radius: 7%;
 
 
 

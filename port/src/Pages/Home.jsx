@@ -14,7 +14,8 @@ import { ScrollingProvider, Section } from 'react-scroll-section'
 const styles = {
   about__me: {
     padding: '6vw',
-  
+   borderBottom:"1px solid black",
+   
 
     '& h2': {
       textAlign: 'center',
@@ -179,7 +180,7 @@ const styles = {
   techContainer: {
     textAlign: 'center',
     padding: '0 6vw',
-  
+    borderBottom:"1px solid black",
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -195,10 +196,18 @@ const styles = {
   },
   experince: {
     padding: '40px 6vw',
-    display: 'flex',
-    flexWrap: 'wrap',
+    borderTop:"1px solid black",
     justifyContent: 'center',
     backgroundColor: '#ECF0F1;',
+
+    '& div':{
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+
+    }
+
+    
    
   },
   project__card:{
@@ -253,7 +262,7 @@ function Home({ classes }) {
       <BigBox />
       <Fade bottom>
         <Section id='about' className={classes.about__me}>
-          <h2 style={{marginBottom:"5vh"}}>About Me</h2>
+          <h2 style={{marginBottom:"5vh",textDecoration:'underline'}}>About Me</h2>
           <div className={classes.p__img__container}>
             <p>
             Hi I am DHRUVASURYA Well trained in JavaScript, MERN stack and Data
@@ -272,7 +281,7 @@ function Home({ classes }) {
       </Fade>
       <Fade left>
         <section className={classes.techContainer}>
-          <h2>Tools and Technologies</h2>
+          <h2 style={{marginBottom:"5vh",textDecoration:'underline'}}>Tools and Technologies</h2>
           <div className={style.tools}>
             <div >
             <img
@@ -339,7 +348,7 @@ function Home({ classes }) {
 
       <Section id='projects' className={classes.project__container}>
         <Fade bottom>
-          <h2 style={{fontSize:"34px"}}>Projects</h2>
+          <h2 style={{fontSize:"34px",textDecoration:'underline'}}>Projects</h2>
           <p></p>
         </Fade>
         {/* First Project */}
@@ -395,7 +404,7 @@ function Home({ classes }) {
                     onClick={() => goTo('https://nitishvrma.github.io/Shine_Clone/')}
                     className={classNames(classes.menuButton)}
                   >
-                    Live Version
+                    Demo
                   </button>
 
                   <button
@@ -463,7 +472,7 @@ function Home({ classes }) {
                     onClick={() => goTo('https://travelguru-clone.herokuapp.com/')}
                     className={classNames(classes.menuButton)}
                   >
-                    Live Version
+                   Demo
                   </button>
 
                   <button
@@ -488,24 +497,28 @@ function Home({ classes }) {
       </Section>
 
       <Fade left>
+      
         <section className={classes.experince}>
+        <h2 style={{textDecoration:"underline",backgroundColor:"#ECF0F1",textAlign:"center"}}>Over All</h2>
+         <div>
           <div className='circle small'>
             <h2>100+ Hours</h2>
-            <p>Softskills Training</p>
+            <p>Soft Skills Training</p>
           </div>
           <div className='circle small'>
             <h2>1200+ Hours</h2>
-            <p>Fullstack coding</p>
+            <p>Full Stack Coding</p>
           </div>
           <div className='circle small'>
             <h2>1200+ Hours</h2>
-            <p>Datastructures and Algorithms</p>
+            <p>Data structures and Algorithms</p>
+          </div>
           </div>
         </section>
       </Fade>
 
       <Section id='contact' className={classes.contactMe}>
-        <h2>Contact Me</h2>
+        <h2 style={{color:"white"}}>Contact Me</h2>
         <div className={classes.contactBtnContainer}>
         
 
@@ -561,6 +574,16 @@ function Home({ classes }) {
 
             <span className={classes.btnText}>Github</span>
           </button>
+
+          <button style={{fontSize:"0.9em"}}>
+           
+           koligesurya@gmail.com
+          
+          </button>
+          <button style={{fontSize:"0.9em"}}>
+           +918660380591
+         </button>
+
         </div>
       </Section>
     </ScrollingProvider>
