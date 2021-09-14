@@ -1,10 +1,10 @@
 .tools {
-  width: 60%;
+  width: 70%;
   border-radius: 50px;
   justify-content: space-between;
-  background: #fffdfa;
-  box-shadow: inset 5px 5px 3px black,
-              inset -5px -5px 3px black;
+  align-items: center;
+  background: #ffff;
+  
   padding: 40px;
   margin: 30px;
  display: flex;
@@ -16,6 +16,18 @@
 }
 .tools > img {
   margin: 20px 20px 0 0;
+}
+
+.tools  > div{
+  justify-content: center;
+  border: 2px solid black;
+  padding: 2%;
+  width: 22%;
+  margin-right: 1.5%;
+  margin-bottom: 1vh;
+
+
+
 }
 .about__me {
   background-color: #b37400;
@@ -33,9 +45,16 @@
   background: #ffa500;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 820px) {
   .tools{
-   flex-direction:column
+    
+   flex-direction:column 
+
  }
+ .tools >div{
+   width: 40%;
+ }
+
 }
+
 

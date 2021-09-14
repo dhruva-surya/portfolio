@@ -10,6 +10,9 @@ const styles = {
     position: 'relative',
     zIndex: '1',
     display: 'flex',
+    '@media (max-width:780px)': {
+      flexDirection: 'column',
+    },
   },
   hero__bg__container: {
     position: 'absolute',
@@ -98,6 +101,28 @@ const styles = {
     boxShadow: ' unset',
     border: 'none',
   },
+
+  p_img:{
+     width: '20%',
+     marginTop:"20em",
+     marginLeft:"10em",
+     '@media (max-width:780px)': {
+    width:'30%',
+    marginTop:'-30px'
+    },
+     
+
+     '& img':{
+    width: '100%',
+    height: '60%',
+    
+    border:'2px solid black',
+    borderRadius:'9%'
+
+     }
+
+  }
+
 }
 
 function Big({ classes }) {
@@ -110,8 +135,11 @@ function Big({ classes }) {
     <>
       <section className={classes.container}>
         <Zoom>
-          <div className={classes.hero__bg__container}></div>
+          <div className={classes.hero__bg__container}>
+          
+          </div>
           <div className={classes.hero__bg__content}>
+            <h1 style={{color:"white",fontSize:"3rem"}}>DHRUVASURYA K N</h1>
             <h1 className={classes.hero__h1}>
               Passionate In developing Web applications
             </h1>
@@ -146,7 +174,7 @@ function Big({ classes }) {
                   width='20'
                   height='20'
                   viewBox='0 0 25 25'
-                  fill='#ECF0F1'
+                  fill='#fffff'
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   {' '}
@@ -155,10 +183,27 @@ function Big({ classes }) {
 
                 <span className={classes.btnText}>Github</span>
               </button>
+              <button
+                onClick={() => goTo('https://drive.google.com/file/d/1lUHv5OFshOVVx_1uZSVjeKwPAHxvxQVy/view?usp=sharing')}
+                className={classNames(classes.menuButton, classes.orange)}
+              >
+            
+
+                <span className={classes.btnText}>Resume</span>
+              </button>
             </div>
       
           </div>
         </Zoom>
+        <div className={classes.p_img}>
+        <img
+              src={process.env.PUBLIC_URL + '/images/avatar.jpg'}
+              alt='avatar'
+              width='100'
+              height='100'
+             
+            />
+            </div>
       </section>
     </>
   )

@@ -14,6 +14,8 @@ import { ScrollingProvider, Section } from 'react-scroll-section'
 const styles = {
   about__me: {
     padding: '6vw',
+  
+
     '& h2': {
       textAlign: 'center',
       color: 'black',
@@ -28,10 +30,13 @@ const styles = {
   p__img__container: {
     display: 'flex',
     alignItems: 'center',
+    borderRadius:'7px',
+    boxShadow:  '3px 3px 10px black',
+    border: '2px solid black',
     
     '& p': {
       lineHeight: '1.8rem',
-      fontSize: '22px',
+      fontSize: '23px',
       margin: '20px',
     },
     '& img': {
@@ -180,6 +185,13 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#ffff',
+  
+    '& h2':{
+      
+      color: 'black',
+      fontWeight: 'bolder',
+      fontSize: '34px',
+    }
   },
   experince: {
     padding: '40px 6vw',
@@ -191,7 +203,7 @@ const styles = {
   },
   project__card:{
 
-    border: '7px solid black',
+    border: '2px solid black',
     borderRadius:'5px',
     boxShadow:  '7px 7px 15px black',
             
@@ -252,34 +264,17 @@ function Home({ classes }) {
             products, as a Full Stack Web Developer in a
             reputed company.
             </p>
-            <img
-              src={process.env.PUBLIC_URL + '/images/avatar.jpg'}
-              alt='avatar'
-            />
+          
           </div>
 
-          <button
-            onClick={() =>
-              goTo(
-                'https://drive.google.com/file/d/1lUHv5OFshOVVx_1uZSVjeKwPAHxvxQVy/view?usp=sharing'
-              )
-            }
-            className={classNames(
-              classes.menuButton,
-              classes.orange,
-              classes.resumeBtn
-            )}
-            id={style.butn}
-          >
-            View Resume
-          </button>
+          
         </Section>
       </Fade>
       <Fade left>
         <section className={classes.techContainer}>
           <h2>Tools and Technologies</h2>
           <div className={style.tools}>
-            <div>
+            <div >
             <img
               alt='tech-pic'
               height='100'
@@ -344,7 +339,7 @@ function Home({ classes }) {
 
       <Section id='projects' className={classes.project__container}>
         <Fade bottom>
-          <h2>Projects</h2>
+          <h2 style={{fontSize:"34px"}}>Projects</h2>
           <p></p>
         </Fade>
         {/* First Project */}
@@ -417,6 +412,72 @@ function Home({ classes }) {
           </div>
 
 
+          <div className={classes.project__card}>
+            <div className={classes.img__container}>
+              <img
+                src={process.env.PUBLIC_URL + '/images/travel.gif'}
+                alt=''
+              />
+            </div>
+
+            <div className={classes.project__card__content}>
+              <h2>Travel Guru Website</h2>
+              <p>
+             
+            Travelguru is India's leading travel website, offering you the best prices on flights, hotels and holiday packages across India and the world. Travelguru makes planning and buying a holiday or a business trip easy and convenient.Travelguru's current product offering consists of airline tickets, hotel rooms, vacation packages and cruises.They will shortly be expanding services to car rentals. 
+              </p>
+              <div className={classes.project__tech__info}>
+                <h3>Technologies Used</h3>
+                <div className={classes.project__tech__tools}>
+                  <div>
+                    <img
+                      alt='tech-pic'
+                      height='40'
+                      src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png'
+                    />
+                  </div>
+                  <div>
+                    <img
+                      alt='tech-pic'
+                      height='40'
+                      src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png'
+                    />
+                  </div>
+                  <div>
+                    <img
+                      alt='tech-pic'
+                      height='40'
+                      src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png'
+                    />
+                  </div>
+                  <div>
+                    <img
+                      alt='tech-pic'
+                      height='40'
+                      src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png'
+                    />
+                  </div>
+                </div>
+                <div>
+                  <button
+                    onClick={() => goTo('https://travelguru-clone.herokuapp.com/')}
+                    className={classNames(classes.menuButton)}
+                  >
+                    Live Version
+                  </button>
+
+                  <button
+                    onClick={() =>
+                      goTo('https://github.com/bharadwaj-bhat/Travel_Guru')
+                    }
+                    className={classes.menuButton}
+                  >
+                    Code
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
