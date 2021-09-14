@@ -253,7 +253,7 @@ function Home({ classes }) {
       <BigBox />
       <Fade bottom>
         <Section id='about' className={classes.about__me}>
-          <h2>About Me</h2>
+          <h2 style={{marginBottom:"5vh"}}>About Me</h2>
           <div className={classes.p__img__container}>
             <p>
             Hi I am DHRUVASURYA Well trained in JavaScript, MERN stack and Data
