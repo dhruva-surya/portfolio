@@ -49,7 +49,7 @@ const styles = {
 
     left: '5vw',
     '@media (max-width:780px)': {
-      width: '100%',
+      width: '90%',
       padding: '10vh 6vh',
     },
   },
