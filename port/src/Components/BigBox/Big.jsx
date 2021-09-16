@@ -186,7 +186,7 @@ function Big({ classes }) {
                 <span className={classes.btnText}>Github</span>
               </button>
               <button
-                onClick={() => goTo('https://drive.google.com/file/d/1X4vyn0TuSXhA11r1b3nsTA4yZb7pB9Md/view?usp=sharing')}
+                onClick={() => goTo('https://drive.google.com/file/d/1yYtMUH1Qw1cGJ1yKJpriMXahr1F-SHy_/view?usp=sharing')}
                 className={classNames(classes.menuButton, classes.orange)}
               >
             
