@@ -107,8 +107,10 @@ const styles = {
      marginTop:"20em",
      marginLeft:"10em",
      '@media (max-width:780px)': {
-    width:'30%',
-    marginTop:'-30px'
+    width:'40%',
+    marginTop:'-30px',
+    alignItems:"center",
+    justifyContent:"center"
     },
      
 
@@ -141,11 +143,11 @@ function Big({ classes }) {
           <div className={classes.hero__bg__content}>
             <h1 style={{color:"white",fontSize:"3rem"}}>DHRUVASURYA K N</h1>
             <h1 className={classes.hero__h1}>
-              Passionate In developing Web applications
+            Passionate in developing web applications. 
             </h1>
 
             <div className={classes.text_developer}>
-              Fullstack Web Developer from Bengaluru, India
+              Full Stack Web Developer from Bengaluru, India
             </div>
 
             <div className={classes.btn_container}>
@@ -184,7 +186,7 @@ function Big({ classes }) {
                 <span className={classes.btnText}>Github</span>
               </button>
               <button
-                onClick={() => goTo('https://drive.google.com/file/d/1lUHv5OFshOVVx_1uZSVjeKwPAHxvxQVy/view?usp=sharing')}
+                onClick={() => goTo('https://drive.google.com/file/d/1X4vyn0TuSXhA11r1b3nsTA4yZb7pB9Md/view?usp=sharing')}
                 className={classNames(classes.menuButton, classes.orange)}
               >
             

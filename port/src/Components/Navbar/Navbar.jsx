@@ -126,6 +126,8 @@ function Navbar({ classes }) {
 
   const aboutSection = useScrollSection('about')
   const contactSection = useScrollSection('contact')
+  const skillSection =useScrollSection('skills')
+  const projectSection=useScrollSection('projects')
   const goTo = (url) => {
     console.log(url)
     window.location.assign(url)
@@ -198,6 +200,22 @@ function Navbar({ classes }) {
                 style={{ color: 'white' }}
               >
                 Contact
+              </div>
+              <div
+                onClick={skillSection.onClick}
+                selected={skillSection.selected}
+                className={classes.menuItem}
+                style={{ color: 'white' }}
+              >
+                Skills
+              </div>
+              <div
+                onClick={projectSection.onClick}
+                selected={projectSection.selected}
+                className={classes.menuItem}
+                style={{ color: 'white' }}
+              >
+                Projects
               </div>
             </div>
           </div>

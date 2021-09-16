@@ -80,8 +80,7 @@ const styles = {
     width: '100%',
     height: '250px',
     overflow: 'hidden',
-    borderTopLeftRadius: '10px',
-    borderTopRightRadius: '10px',
+    
     '& img': {
       height: '100%',
 
@@ -118,9 +117,9 @@ const styles = {
     borderTopLeftRadius: '10px',
     borderTopRightRadius: '10px',
     '& img': {
-      borderTopLeftRadius: '10px',
+     // borderTopLeftRadius: '10px',
       
-      borderTopRightRadius: '10px',
+      //borderTopRightRadius: '10px',
       width: '100%',
     },
     '@media (max-width:1020px)': {
@@ -144,7 +143,6 @@ const styles = {
   },
 
   menuButton: {
-    width: '100px',
     backgroundColor: 'white',
     marginRight: '5px',
     borderRadius: '5px',
@@ -178,6 +176,7 @@ const styles = {
     boxShadow: 'unset',
   },
   techContainer: {
+    
     textAlign: 'center',
     padding: '0 6vw',
     borderBottom:"1px solid black",
@@ -237,7 +236,7 @@ const styles = {
   },
   contactBtnContainer: {
     display: 'flex',
-    marginBottom: '15px',
+    marginBottom: '25px',
     '@media (max-width:780px)': {
       flexDirection: 'column',
       '& button': {
@@ -265,13 +264,10 @@ function Home({ classes }) {
           <h2 style={{marginBottom:"5vh",textDecoration:'underline'}}>About Me</h2>
           <div className={classes.p__img__container}>
             <p>
-            Hi I am DHRUVASURYA Well trained in JavaScript, MERN stack and Data
-            structure and Algorithm. Collaborative team
-            player dedicated to execute goal-oriented
-            projects. Seeking an opportunity to use my skills
-            and work on creating exciting and unique
-            products, as a Full Stack Web Developer in a
-            reputed company.
+            Hi My name is Dhruvasurya K N, I am well trained in JavaScript, MERN stack and Data Structure & 
+            Algorithms. I am a collaborative team player dedicated to execute goal-oriented projects. I am 
+            currently seeking an opportunity to use my skills and dedication on creating exciting and unique 
+             products as a Full Stack Web Developer in a reputed company.    
             </p>
           
           </div>
@@ -280,7 +276,7 @@ function Home({ classes }) {
         </Section>
       </Fade>
       <Fade left>
-        <section className={classes.techContainer}>
+        <Section id="skills" className={classes.techContainer}>
           <h2 style={{marginBottom:"5vh",textDecoration:'underline'}}>Tools and Technologies</h2>
           <div className={style.tools}>
             <div >
@@ -343,7 +339,7 @@ function Home({ classes }) {
         </div>
         
           </div>
-        </section>
+        </Section>
       </Fade>
 
       <Section id='projects' className={classes.project__container}>
@@ -487,7 +483,68 @@ function Home({ classes }) {
               </div>
             </div>
           </div>
+         
 
+          <div className={classes.project__card}>
+            <div className={classes.img__container}>
+              <img
+                src={process.env.PUBLIC_URL + '/images/plural.gif'}
+                alt=''
+              />
+            </div>
+
+            <div className={classes.project__card__content}>
+              <h2>Pluralsight Website</h2>
+              <p>
+             
+              Pluralsight, Inc. is an American privately held online education company that offers a variety of video training courses for software developers, IT administrators, and creative professionals through its website. Technology teams are only as successful as their skills are relevant. Pluralsight Skills gives you the most effective path to building business-critical skills.
+              </p>
+              <div className={classes.project__tech__info}>
+                <h3>Technologies Used</h3>
+                <div className={classes.project__tech__tools}>
+                  <div>
+                    <img
+                      alt='tech-pic'
+                      height='40'
+                      src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png'
+                    />
+                  </div>
+                  <div>
+                    <img
+                      alt='tech-pic'
+                      height='40'
+                      src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png'
+                    />
+                  </div>
+                  <div>
+                    <img
+                      alt='tech-pic'
+                      height='40'
+                      src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png'
+                    />
+                  </div>
+                 
+                </div>
+                <div>
+                  <button
+                    onClick={() => goTo('https://rohitkumar0427.github.io/pluralWebsite/')}
+                    className={classNames(classes.menuButton)}
+                  >
+                   Demo
+                  </button>
+
+                  <button
+                    onClick={() =>
+                      goTo('https://github.com/rohitkumar0427/pluralWebsite.git')
+                    }
+                    className={classes.menuButton}
+                  >
+                    Code
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
@@ -499,7 +556,7 @@ function Home({ classes }) {
       <Fade left>
       
         <section className={classes.experince}>
-        <h2 style={{textDecoration:"underline",backgroundColor:"#ECF0F1",textAlign:"center"}}>Over All</h2>
+        <h2 style={{textDecoration:"underline",backgroundColor:"#ECF0F1",textAlign:"center"}}>My Overall Statistics</h2>
          <div>
           <div className='circle small'>
             <h2>100+ Hours</h2>
@@ -518,7 +575,7 @@ function Home({ classes }) {
       </Fade>
 
       <Section id='contact' className={classes.contactMe}>
-        <h2 style={{color:"white"}}>Contact Me</h2>
+        <h2 style={{color:"white",marginBottom:"3.5vh",textDecoration:"underline"}}>Contact Me</h2>
         <div className={classes.contactBtnContainer}>
         
 
@@ -575,12 +632,15 @@ function Home({ classes }) {
             <span className={classes.btnText}>Github</span>
           </button>
 
-          <button style={{fontSize:"0.9em"}}>
+          <button className={classNames(classes.menuButton, classes.flex,classes.btnText)}
+          >
            
            koligesurya@gmail.com
           
           </button>
-          <button style={{fontSize:"0.9em"}}>
+          <button className={classNames(classes.menuButton, classes.flex,classes.btnText)}
+  
+         >
            +918660380591
          </button>
 
