@@ -307,7 +307,7 @@ function Home({ classes }) {
             <img
               alt='tech-pic'
               height='100'
-              src='https://material-ui.com/static/logo.png'
+              src='https://www.pngitem.com/pimgs/m/577-5779757_react-material-ui-logo-hd-png-download.png'
             />
             <h4>Material UI</h4>
             </div>
@@ -545,6 +545,78 @@ function Home({ classes }) {
               </div>
             </div>
           </div>
+
+          
+
+          <div className={classes.project__card}>
+            <div className={classes.img__container}>
+              <img
+                src={process.env.PUBLIC_URL + '/images/insta.gif'}
+                alt=''
+              />
+            </div>
+
+            <div className={classes.project__card__content}>
+              <h2>Intagram Website</h2>
+              <p>
+             
+              In this project we made clone of Instagram website.basically Instagram is an entirely visual platform. Unlike Facebook, which relies on both text and pictures, or Twitter, which relies on text alone, Instagram's sole purpose is to enable users to share images or videos with their audience. 
+              </p>
+              <div className={classes.project__tech__info}>
+                <h3>Technologies Used</h3>
+                <div className={classes.project__tech__tools}>
+                  <div>
+                    <img
+                      alt='tech-pic'
+                      height='40'
+                      src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png'
+                    />
+                  </div>
+                  <div>
+                    <img
+                      alt='tech-pic'
+                      height='40'
+                      src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png'
+                    />
+                  </div>
+                  <div>
+                    <img
+                      alt='tech-pic'
+                      height='40'
+                      src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png'
+                    />
+                  </div>
+                  <div>
+                    <img
+                      alt='tech-pic'
+                      height='40'
+                      src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png'
+                    />
+                  </div>
+                </div>
+                <div>
+                  <button
+                    onClick={() => goTo('https://instagram-clone-ap.herokuapp.com/')}
+                    className={classNames(classes.menuButton)}
+                  >
+                   Demo
+                  </button>
+
+                  <button
+                    onClick={() =>
+                      goTo('https://github.com/Ramlala-Yadav-Git/Instagram-clone')
+                    }
+                    className={classes.menuButton}
+                  >
+                    Code
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+
+
 
 
 
